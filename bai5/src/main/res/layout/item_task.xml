@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <!-- Text hiển thị mô tả của tác vụ -->
+    <TextView
+        android:id="@+id/taskDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Mô tả tác vụ"
+        android:textSize="16sp"
+        android:paddingEnd="8dp" />
+
+    <!-- Nút chỉnh sửa tác vụ, sử dụng ImageButton -->
+    <ImageButton
+        android:id="@+id/btnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_edit"
+    android:contentDescription="Sửa tác vụ"
+    android:visibility="gone" />
+
+    <!-- Nút xóa tác vụ, sử dụng ImageButton -->
+    <ImageButton
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_delete"
+    android:contentDescription="Xóa tác vụ"
+    android:visibility="gone" />
+</LinearLayout>
